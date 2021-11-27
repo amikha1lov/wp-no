@@ -1,0 +1,107 @@
+
+@font-face{
+    font-family:'main-font-ultra-light', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralight.woff2');
+}
+@font-face{
+    font-family:'main-font-ultra-light', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralight.woff');
+}
+@font-face{
+    font-family:'main-font-ultra-light', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralight.eot');
+}
+@font-face{
+    font-family:'main-font-ultra-light', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralight.otf');
+}
+
+
+
+@font-face{
+    font-family:'main-font-ultra-light-italic', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralightitalic.woff2');
+}
+@font-face{
+    font-family:'main-font-ultra-light-italic', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralightitalic.woff');
+}
+@font-face{
+    font-family:'main-font-ultra-light-italic', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralightitalic.eot');
+}
+@font-face{
+    font-family:'main-font-ultra-light-italic', sans-serif;
+    src:url('../fonts/helveticaneuecyr_ultralightitalic.otf');
+}
+
+
+@font-face{
+    font-family:'main-font-thin', sans-serif;
+    src:url('../fonts/helveticaneuecyr_thin.woff2');
+}
+@font-face{
+    font-family:'main-font-thin', sans-serif;
+    src:url('../fonts/helveticaneuecyr_thin.woff');
+}
+@font-face{
+    font-family:'main-font-thin', sans-serif;
+    src:url('../fonts/helveticaneuecyr_thin.eot');
+}
+@font-face{
+    font-family:'main-font-thin', sans-serif;
+    src:url('../fonts/helveticaneuecyr_thin.otf');
+}
+
+
+@font-face{
+    font-family:'main-font-roman', sans-serif;
+    src:url('../fonts/helveticaneuecyr_roman.woff2');
+}
+@font-face{
+    font-family:'main-font-roman', sans-serif;
+    src:url('../fonts/helveticaneuecyr_roman.woff');
+}
+@font-face{
+    font-family:'main-font-roman', sans-serif;
+    src:url('../fonts/helveticaneuecyr_roman.eot');
+}
+@font-face{
+    font-family:'main-font-roman', sans-serif;
+    src:url('../fonts/helveticaneuecyr_roman.otf');
+}
+
+@font-face{
+    font-family:'main-font-black', sans-serif;
+    src:url('../fonts/helveticaneuecyr_black.woff2');
+}
+@font-face{
+    font-family:'main-font-black', sans-serif;
+    src:url('../fonts/helveticaneuecyr_black.woff');
+}
+@font-face{
+    font-family:'main-font-black', sans-serif;
+    src:url('../fonts/helveticaneuecyr_black.eot');
+}
+@font-face{
+    font-family:'main-font-black', sans-serif;
+    src:url('../fonts/helveticaneuecyr_black.otf');
+}
+
+
+@font-face{
+    font-family:'main-font-medium', sans-serif;
+    src:url('../fonts/helveticaneuecyr_medium.woff2');
+}
+@font-face{
+    font-family:'main-font-medium', sans-serif;
+    src:url('../fonts/helveticaneuecyr_medium.woff');
+}
+@font-face{
+    font-family:'main-font-medium', sans-serif;
+    src:url('../fonts/helveticaneuecyr_medium.eot');
+}
+@font-face{
+    font-family:'main-font-medium', sans-serif;
+    src:url('../fonts/helveticaneuecyr_medium.otf');
+}

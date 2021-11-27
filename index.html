@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="page">
+
+
+
+        <header class="header">
+            <div class="header-container">
+                <div class="container header__top top-header">
+
+                    <img src="assets/img/logo.png" alt="" class="top-header__logo logo">
+
+                    <nav class="top-header__navigation top-menu">
+                        <ul class="top-menu__list">
+                            <li class="top-menu__item"><a href="#" class="top-menu__link">Личный кабинет</a></li>
+                            <li class="top-menu__item top-menu__item--vip">
+                                <a href="#" class="top-menu__link top-menu__link--cyan">
+                                    <svg width="32" height="18" viewBox="0 0 32 18" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 12.8571C15.632 12.8571 15.3333 12.5691 15.3333 12.2143V5.78571C15.3333 5.43086 15.632 5.14286 16 5.14286C16.368 5.14286 16.6667 5.43086 16.6667 5.78571V12.2143C16.6667 12.5691 16.368 12.8571 16 12.8571Z"
+                                              fill="#00CCFF"/>
+                                        <path d="M20.6667 12.8571C20.2987 12.8571 20 12.5691 20 12.2143V5.78571C20 5.43086 20.2987 5.14286 20.6667 5.14286H22.6667C24.1373 5.14286 25.3333 6.29614 25.3333 7.71429C25.3333 9.13243 24.1373 10.2857 22.6667 10.2857H21.3333V12.2143C21.3333 12.5691 21.0347 12.8571 20.6667 12.8571ZM21.3333 9H22.6667C23.4013 9 24 8.42271 24 7.71429C24 7.00586 23.4013 6.42857 22.6667 6.42857H21.3333V9Z"
+                                              fill="#00CCFF"/>
+                                        <path d="M9.33333 12.8571C9.03867 12.8571 8.77867 12.6707 8.69467 12.3994L6.69467 5.97086C6.58933 5.63014 6.78933 5.27271 7.14133 5.16986C7.49333 5.06829 7.86533 5.26114 7.972 5.60057L9.33333 9.97714L10.6947 5.60186C10.8 5.26114 11.1693 5.06829 11.5253 5.16986C11.8787 5.27271 12.0787 5.63014 11.972 5.97086L9.972 12.3994C9.888 12.6707 9.628 12.8571 9.33333 12.8571Z"
+                                              fill="#00CCFF"/>
+                                        <path d="M28.6667 18H3.33333C1.496 18 0 16.5574 0 14.7857V3.21429C0 1.44257 1.496 0 3.33333 0H28.6667C30.504 0 32 1.44257 32 3.21429V14.7857C32 16.5574 30.504 18 28.6667 18ZM3.33333 1.28571C2.23067 1.28571 1.33333 2.151 1.33333 3.21429V14.7857C1.33333 15.849 2.23067 16.7143 3.33333 16.7143H28.6667C29.7693 16.7143 30.6667 15.849 30.6667 14.7857V3.21429C30.6667 2.151 29.7693 1.28571 28.6667 1.28571H3.33333Z"
+                                              fill="#00CCFF"/>
+                                    </svg>
+                                    Отделение повышенного комфорта
+                                </a>
+                            </li>
+                            <li class="top-menu__item"><a href="#" class="top-menu__link top-menu__link--red">Онлайн-запись</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <div class="top-header__search top-search">
+                        <input type="search" name="q" placeholder="Поиск по сайту" class="top-search__input">
+                        <input type="submit" value="" class="top-search__submit">
+
+                    </div>
+
+                    <a href="tel:+73832018315" class="top-header__phone phone">8 (383) 201-83-15</a>
+
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="bottom-header">
+                            <nav class="bottom-header__navigation main-menu">
+                                <ul class="main-menu__list">
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">О нас</a>
+                                        <ul>
+                                            <li><a href="#">Пункт меню</a></li>
+                                            <li><a href="#">Пункт меню</a>
+                                            </li>
+                                            <li><a href="#">Пункт меню</a>
+                                                <ul>
+                                                    <li><a href="#">Пункт меню</a></li>
+                                                    <li><a href="#">Пункт меню</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Услуги и цены</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Анализы</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Отделения</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Специалисты</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Акции</a></li>
+                                    <li class="main-menu__item"><a href="#" class="main-menu__link">Контакты</a></li>
+
+                                </ul>
+
+                            </nav>
+
+
+                            <div class="bottom-header__callback header-callback">
+                                <input type="tel" name="phone" placeholder="Введите телефон" class="header-callback__input">
+                                <input type="submit" value="Записаться" class="header-callback__submit">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-container">
+                <div class="swiper main-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hero-slide" style="background: linear-gradient(130deg, rgba(152,213,178,1) 0%, rgba(152,213,178,1) 52%, rgba(191,196,207,0) 52%, rgba(233,236,241,0) 100%), url('assets/img/slider.jpg');">
+                            <div class="container">
+                                <h2 class="hero-slide__title">Сеть медицинских центров Врачебная практика</h2>
+                                <p class="hero-slide__descr">Мы находимся по адресам:</p>
+                                <ul class="hero-slide__list">
+                                    <li class="hero-slide__item">Геодезическая 2/1</li>
+                                    <li class="hero-slide__item">Красный проспект, д. 163</li>
+                                    <li class="hero-slide__item">3 переулок Крашенинникова, д. 12</li>
+                                    <li class="hero-slide__item">ул. Покрышкина, д. 1</li>
+                                </ul>
+
+                                <div class="hero-slide__bottom bottom-slide">
+                                    <div class="bottom-slide__buttons slide-links">
+                                        <a href="#" class="slide-links__more btn-more">Подробнее</a>
+                                        <a href="#" class="slide-links__download btn-primary">Скачать мобильное приложение</a>
+                                    </div>
+
+                                    <div class="bottom-slide__write">
+                                        Консультация и запись
+                                        к врачу по телефону:
+                                        <a href="tel:+73832018315" class="tel">8 (383) 201-83-15</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide hero-slide" style="background: linear-gradient(130deg, rgba(152,213,178,1) 0%, rgba(152,213,178,1) 52%, rgba(191,196,207,0) 52%, rgba(233,236,241,0) 100%), url('assets/img/slider2.png');">
+                            <div class="container">
+                                <h2 class="hero-slide__title">Сеть медицинских центров Врачебная практика 2</h2>
+                                <p class="hero-slide__descr">Мы находимся по адресам:</p>
+                                <ul class="hero-slide__list">
+                                    <li class="hero-slide__item">Геодезическая 2/1</li>
+                                    <li class="hero-slide__item">Красный проспект, д. 163</li>
+                                    <li class="hero-slide__item">3 переулок Крашенинникова, д. 12</li>
+                                    <li class="hero-slide__item">ул. Покрышкина, д. 1</li>
+                                </ul>
+
+                                <div class="hero-slide__bottom bottom-slide">
+                                    <div class="bottom-slide__buttons slide-links">
+                                        <a href="#" class="slide-links__more btn-more">Подробнее</a>
+                                        <a href="#" class="slide-links__download btn-primary">Скачать мобильное приложение</a>
+                                    </div>
+
+                                    <div class="bottom-slide__write">
+                                        Консультация и запись
+                                        к врачу по телефону:
+                                        <a href="tel:+73832018315" class="tel">8 (383) 201-83-15</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+    <section class="callback">
+        <div class="container callback-container">
+            <div class="callback__callback callback-form">
+                <input type="tel" name="phone" placeholder="Введите телефон" class="callback-form__input">
+                <input type="submit" value="Записаться" class="callback-form__submit btn-primary">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+        <section class="our-centers">
+            <div class="container our-centers-container">
+                <h2 class="title our-centers__title">Наши центры</h2>
+                <ul class="our-centers__list">
+                    <li class="our-centers__item">
+                        <span class="our-centers__elem">
+                            <svg width="32" height="18" viewBox="0 0 32 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 12.8571C15.632 12.8571 15.3333 12.5691 15.3333 12.2143V5.78571C15.3333 5.43086 15.632 5.14286 16 5.14286C16.368 5.14286 16.6667 5.43086 16.6667 5.78571V12.2143C16.6667 12.5691 16.368 12.8571 16 12.8571Z"
+                                              fill="#00CCFF"/>
+                                        <path d="M20.6667 12.8571C20.2987 12.8571 20 12.5691 20 12.2143V5.78571C20 5.43086 20.2987 5.14286 20.6667 5.14286H22.6667C24.1373 5.14286 25.3333 6.29614 25.3333 7.71429C25.3333 9.13243 24.1373 10.2857 22.6667 10.2857H21.3333V12.2143C21.3333 12.5691 21.0347 12.8571 20.6667 12.8571ZM21.3333 9H22.6667C23.4013 9 24 8.42271 24 7.71429C24 7.00586 23.4013 6.42857 22.6667 6.42857H21.3333V9Z"
+                                              fill="#00CCFF"/>
+                                        <path d="M9.33333 12.8571C9.03867 12.8571 8.77867 12.6707 8.69467 12.3994L6.69467 5.97086C6.58933 5.63014 6.78933 5.27271 7.14133 5.16986C7.49333 5.06829 7.86533 5.26114 7.972 5.60057L9.33333 9.97714L10.6947 5.60186C10.8 5.26114 11.1693 5.06829 11.5253 5.16986C11.8787 5.27271 12.0787 5.63014 11.972 5.97086L9.972 12.3994C9.888 12.6707 9.628 12.8571 9.33333 12.8571Z"
+                                              fill="#00CCFF"/>
+                                        <path d="M28.6667 18H3.33333C1.496 18 0 16.5574 0 14.7857V3.21429C0 1.44257 1.496 0 3.33333 0H28.6667C30.504 0 32 1.44257 32 3.21429V14.7857C32 16.5574 30.504 18 28.6667 18ZM3.33333 1.28571C2.23067 1.28571 1.33333 2.151 1.33333 3.21429V14.7857C1.33333 15.849 2.23067 16.7143 3.33333 16.7143H28.6667C29.7693 16.7143 30.6667 15.849 30.6667 14.7857V3.21429C30.6667 2.151 29.7693 1.28571 28.6667 1.28571H3.33333Z"
+                                              fill="#00CCFF"/>
+                               </svg>
+                            Геодезическая 2/1</span>
+                        <a href="" class="our-centers__link">Подробнее об отделении</a>
+                    </li>
+                    <li class="our-centers__item">
+                        <span class="our-centers__elem">
+                            Красный проспект, д. 163</span>
+                        <a href="" class="our-centers__link">Подробнее об отделении</a>
+                    </li>
+                    <li class="our-centers__item">
+                        <span class="our-centers__elem">
+                            3 переулок Крашенинникова, д. 12</span>
+                        <a href="" class="our-centers__link">Подробнее об отделении</a>
+                    </li>
+                    <li class="our-centers__item">
+                        <span class="our-centers__elem">
+                            Красный проспект, д. 163</span>
+                        <a href="" class="our-centers__link">Подробнее об отделении</a>
+                    </li>
+                </ul>
+
+                <ul class="our-centers__advantages center-advantages">
+                    <li class="center-advantages__item">
+                        <img src="assets/img/center-icon_2.png" alt="">
+                        <span>20 лет опыта</span>
+                    </li>
+                    <li class="center-advantages__item">
+                        <img src="assets/img/center-icon_3.png" alt="">
+                        <span>Всегда теплый приём</span>
+                    </li>
+                    <li class="center-advantages__item">
+                        <img src="assets/img/center-icon_5.png" alt="">
+                        <span>Многофункциональная клиника
+с полным комплексом услуг</span>
+                    </li>
+                    <li class="center-advantages__item">
+                        <img src="assets/img/center-icon_1.png" alt="">
+                        <span>3 года подряд премия НГС в топ 10 клиник Новосибирска</span>
+                    </li>
+                    <li class="center-advantages__item">
+                        <img src="assets/img/center-icon_4.png" alt="">
+                        <span>Лечение детей от 0: любое ведение с выездом врача на дом</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="our-branches">
+            <div class="container our-branches-container">
+                <h2 class="title our-branches__title">Наши отделения</h2>
+                <div class="tabs our-branches__tabs">
+                    <input type="radio" name="tab-btn" id="tab-btn-1" value="" >
+                    <label for="tab-btn-1">
+                        <svg width="32" height="18" viewBox="0 0 32 18" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 12.8571C15.632 12.8571 15.3333 12.5691 15.3333 12.2143V5.78571C15.3333 5.43086 15.632 5.14286 16 5.14286C16.368 5.14286 16.6667 5.43086 16.6667 5.78571V12.2143C16.6667 12.5691 16.368 12.8571 16 12.8571Z"
+                                  fill="#00CCFF"/>
+                            <path d="M20.6667 12.8571C20.2987 12.8571 20 12.5691 20 12.2143V5.78571C20 5.43086 20.2987 5.14286 20.6667 5.14286H22.6667C24.1373 5.14286 25.3333 6.29614 25.3333 7.71429C25.3333 9.13243 24.1373 10.2857 22.6667 10.2857H21.3333V12.2143C21.3333 12.5691 21.0347 12.8571 20.6667 12.8571ZM21.3333 9H22.6667C23.4013 9 24 8.42271 24 7.71429C24 7.00586 23.4013 6.42857 22.6667 6.42857H21.3333V9Z"
+                                  fill="#00CCFF"/>
+                            <path d="M9.33333 12.8571C9.03867 12.8571 8.77867 12.6707 8.69467 12.3994L6.69467 5.97086C6.58933 5.63014 6.78933 5.27271 7.14133 5.16986C7.49333 5.06829 7.86533 5.26114 7.972 5.60057L9.33333 9.97714L10.6947 5.60186C10.8 5.26114 11.1693 5.06829 11.5253 5.16986C11.8787 5.27271 12.0787 5.63014 11.972 5.97086L9.972 12.3994C9.888 12.6707 9.628 12.8571 9.33333 12.8571Z"
+                                  fill="#00CCFF"/>
+                            <path d="M28.6667 18H3.33333C1.496 18 0 16.5574 0 14.7857V3.21429C0 1.44257 1.496 0 3.33333 0H28.6667C30.504 0 32 1.44257 32 3.21429V14.7857C32 16.5574 30.504 18 28.6667 18ZM3.33333 1.28571C2.23067 1.28571 1.33333 2.151 1.33333 3.21429V14.7857C1.33333 15.849 2.23067 16.7143 3.33333 16.7143H28.6667C29.7693 16.7143 30.6667 15.849 30.6667 14.7857V3.21429C30.6667 2.151 29.7693 1.28571 28.6667 1.28571H3.33333Z"
+                                  fill="#00CCFF"/>
+                        </svg>
+                        Косметология</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-2" value="" checked>
+                    <label for="tab-btn-2">Женское отделение</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                    <label for="tab-btn-3">Педиатрия</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-4" value="" >
+                    <label for="tab-btn-4">Операционная</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-5" value="">
+                    <label for="tab-btn-5">Терапия</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-6" value="">
+                    <label for="tab-btn-6">Хирургия</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-7" value="" >
+                    <label for="tab-btn-7">Анализы</label>
+
+
+                    <div id="content-1" class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как: #1</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-2" class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как: #2</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-3"  class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как:#3</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-4"  class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как:#4</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-5"  class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как:#5</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-6"  class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как:#6</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content-7"  class=" our-branches__content branches-content">
+                        <ul class="branches-content__list">
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Мы проводим диагностику таких заболеваний как:#7</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все заболевания отделения педиатрии</a>
+                            </li>
+                            <li class="branches-content__item item-branches">
+                                <h3 class="item-branches__title">Возможные методы лечения:</h3>
+                                <ul class="item-branches__list">
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                    <li class="item-branches__item">Пример часто встречающегося заболевания</li>
+                                </ul>
+                                <a href="#" class="item-branches__link">Все методы лечения</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="links">
+            <div class="container links-container">
+                <div class="links__item links__image">
+                    <img src="assets/img/links_image_1.png" alt="">
+                    <a href="#">Перейти на страницу отделения педиатрии</a>
+                </div>
+                <div class="links__item links__image">
+                    <img src="assets/img/links_image_2.png" alt="">
+                    <a href="#">Смотреть все направления</a>
+                </div>
+                <div class="links__item">
+                    <div class="callback__callback callback-form">
+                        <p>Записаться <span>онлайн</span> на прием</p>
+                        <input type="tel" name="phone" placeholder="Введите телефон" class="callback-form__input">
+                        <input type="submit" value="Записаться" class="callback-form__submit btn-primary">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="specialists">
+            <div class="container specialists-container">
+                <h2 class="title specialists__title">Наши специалисты</h2>
+
+                <ul class="specialists__list">
+                    <li class="specialists__item item-specialists">
+                        <img src="assets/img/doctor.png" alt="" class="item-specialists__image">
+                        <a href="#" class="btn-primary item-specialists__link">Записаться на прием</a>
+                        <span class="item-specialists__name">
+                            Медведева Ирина Викторовна
+                        </span>
+                        <ul class="item-specialists__list">
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Специальность:</div>
+                                <div class="item-specialists__value">Терапевт</div>
+                            </li>
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Стаж:</div>
+                                <div class="item-specialists__value">12 лет</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-specialists__info">Подробнее о враче</a>
+                    </li>
+                    <li class="specialists__item item-specialists">
+                        <img src="assets/img/doctor.png" alt="" class="item-specialists__image">
+                        <a href="#" class="btn-primary item-specialists__link">Записаться на прием</a>
+                        <span class="item-specialists__name">
+                            Медведева Ирина Викторовна
+                        </span>
+                        <ul class="item-specialists__list">
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Специальность:</div>
+                                <div class="item-specialists__value">Терапевт</div>
+                            </li>
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Стаж:</div>
+                                <div class="item-specialists__value">12 лет</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-specialists__info">Подробнее о враче</a>
+                    </li>
+                    <li class="specialists__item item-specialists">
+                        <img src="assets/img/doctor.png" alt="" class="item-specialists__image">
+                        <a href="#" class="btn-primary item-specialists__link">Записаться на прием</a>
+                        <span class="item-specialists__name">
+                            Медведева Ирина Викторовна
+                        </span>
+                        <ul class="item-specialists__list">
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Специальность:</div>
+                                <div class="item-specialists__value">Терапевт</div>
+                            </li>
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Стаж:</div>
+                                <div class="item-specialists__value">12 лет</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-specialists__info">Подробнее о враче</a>
+                    </li>
+                    <li class="specialists__item item-specialists">
+                        <img src="assets/img/doctor.png" alt="" class="item-specialists__image">
+                        <a href="#" class="btn-primary item-specialists__link">Записаться на прием</a>
+                        <span class="item-specialists__name">
+                            Медведева Ирина Викторовна
+                        </span>
+                        <ul class="item-specialists__list">
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Специальность:</div>
+                                <div class="item-specialists__value">Терапевт</div>
+                            </li>
+                            <li class="item-specialists__item">
+                                <div class="item-specialists__option">Стаж:</div>
+                                <div class="item-specialists__value">12 лет</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-specialists__info">Подробнее о враче</a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+
+
+        <section class="news">
+            <div class="container news-container">
+                <h2 class="title news__title">Новости и статьи</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <div class="news__item__image">
+                            <img src="assets/img/news-1.png" alt="">
+                        </div>
+                        <div class="news__item__content news-content">
+                            <div class="news-content__info">
+                                <h2 class="news-content__title">Врач Водовозов: прививка от коронавируса улучшает состояние при постковидном синдроме</h2>
+                                <p class="news-content__text">О продолжительности и возможных последствиях постковидного синдрома рассказал в интервью радио Sputnik врач-терапевт высшей категории, член Клуба научных журналистов Алексей Водовозов.
+                                    Постковидный синдром может приводить к дополнительным нежелательным последствиям. Например,
+                                    к обострению имеющихся хронических заболеваний или проявлению патологий, которых ранее не было.</p>
+                            </div>
+
+                            <a href="#" class="news-content__link">Читать далее</a>
+                        </div>
+                    </li>
+                    <li class="news__item">
+                        <div class="news__item__image">
+                            <img src="assets/img/news-2.png" alt="">
+                        </div>
+                        <div class="news__item__content news-content">
+                            <div class="news-content__info">
+                                <h2 class="news-content__title">Врач Водовозов: прививка от коронавируса улучшает состояние при постковидном синдроме</h2>
+                                <p class="news-content__text">О продолжительности и возможных последствиях постковидного синдрома рассказал в интервью радио Sputnik врач-терапевт высшей категории, член Клуба научных журналистов Алексей Водовозов.
+                                    Постковидный синдром может приводить к дополнительным нежелательным последствиям. Например,
+                                    к обострению имеющихся хронических заболеваний или проявлению патологий, которых ранее не было.</p>
+                            </div>
+
+                            <a href="#" class="news-content__link">Читать далее</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="news__more btn-more">Читать все статьи и новости</a>
+            </div>
+        </section>
+
+
+
+        <section class="banner">
+            <div class="container banner-container">
+                <img src="assets/img/banner-image.png" alt="">
+                <div class="banner__content">
+                    <h2 class="banner__title">Мобильное приложение пациента</h2>
+                    <ul class="banner__list">
+                        <span>Вы сможете в любое время:</span>
+                        <li class="banner__item">—  Записаться на прием</li>
+                        <li class="banner__item">—  Подтвердить, отменить прием без звонка в call-центр</li>
+                        <li class="banner__item">—  Узнать актуальную цену услуг или анализов</li>
+                        <li class="banner__item">—  Обратиться к администратору по чату</li>
+                        <li class="banner__item">—  Получить электронные результаты анализов</li>
+                        <li class="banner__item">—  Узнать подробную информацию о враче</li>
+                        <li class="banner__item">—  Узнать информацию по подготовке к приему</li>
+                        <li class="banner__item">—  Оплатить прием онлайн</li>
+                    </ul>
+
+                    <a href="#" class="banner__download btn-primary">Скачать мобильное приложение</a>
+
+                </div>
+            </div>
+        </section>
+
+    <section class="photos">
+        <div class="container photos-container">
+            <h2 class="title photos__title">Наши фото</h2>
+
+            <div class="swiper photos-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/photo-slide-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/photo-slide-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/photo-slide-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/photo-slide-4.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="photos__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus id massa tempor et, velit aliquet placerat morbi. Quam ultrices magna amet tincidunt imperdiet eleifend rutrum. Ipsum elit et fringilla gravida velit amet nunc ullamcorper in. Cursus sit elit gravida sit consequat ultricies. Gravida tristique commodo volutpat amet, morbi faucibus maecenas amet. A id leo varius amet nisl, at. Cursus sapien massa adipiscing nullam. Id felis aliquet malesuada nec nisi sed vitae semper. Massa iaculis sed pulvinar urna nibh ultrices in leo. Integer posuere pellentesque nunc quis tortor dictumst pellentesque facilisi. Lectus mattis pulvinar praesent odio egestas donec nulla dapibus. Eu, sem sodales consequat rhoncus ipsum ipsum bibendum risus. Et tincidunt vitae eu consectetur hendrerit auctor. Augue nulla amet ullamcorper fames luctus imperdiet tempus eget. Cras odio at malesuada tristique ullamcorper facilisi integer nisl ac.</p>
+                <p>Arcu suspendisse nulla habitant ullamcorper gravida mauris platea viverra justo. Etiam velit, a hac ac nec morbi. Mauris sed tristique tellus et turpis varius. Sed condimentum pulvinar enim faucibus dolor nunc dignissim lobortis vitae. Eu ridiculus faucibus fermentum, nunc cursus urna enim felis malesuada. Aliquam vitae duis eget sed cras magna. Commodo mi euismod est nulla blandit. Ullamcorper eget duis etiam placerat viverra. Ultrices felis lobortis vitae, enim ridiculus sit aliquet aliquam ultrices. Convallis lorem ultrices urna, non. Proin senectus turpis elementum, viverra et a morbi id. At aliquet massa gravida donec aliquam aliquam, amet magnis condimentum. Lorem at nulla pretium vehicula et nulla maecenas nibh. At interdum gravida tincidunt sit arcu sed. Sed metus ipsum nunc sodales adipiscing aliquet. Tristique pharetra lorem semper leo nunc. Quam massa vel habitant dolor id a, pretium lectus. Urna urna, erat elementum velit dignissim. Sed eu, elementum sed egestas ultrices nec eget dictum convallis. Est facilisis viverra ipsum, morbi sagittis, sed neque. Natoque felis eget urna turpis diam ac facilisis diam nunc.</p>
+                <p>Aliquam sed ut phasellus viverra at commodo in lorem porttitor. Risus dolor nullam a amet, nullam nisi, integer. Consequat tellus auctor vitae fermentum, vulputate elementum sit urna sit. Nunc cursus nec est lacinia. Pharetra netus sem pretium arcu pellentesque in praesent nibh faucibus. Lobortis porttitor non est sed condimentum magna faucibus. Amet enim massa volutpat tempor malesuada vitae. Tortor, varius tempus, mus a tellus. Ut massa fusce pellentesque quisque ullamcorper volutpat, elit at elit. Ut bibendum in pellentesque vitae sed amet.</p>
+                <p>Aliquam cursus suspendisse tempus, sed elit gravida. Ornare tellus aliquet fermentum, magna lectus aliquet. Augue sit mi id rutrum dictumst vestibulum elementum senectus eu. Integer amet, amet rutrum a ullamcorper velit dolor turpis. Vitae, aliquam egestas gravida neque, in quis diam. Nisl viverra proin pharetra nullam lobortis ultrices. Nulla elementum sed aliquam mauris libero fringilla. Adipiscing suspendisse tempus tortor donec nunc morbi. Sodales nisi, risus, ligula lacus. Iaculis felis, commodo faucibus enim. Morbi velit ac eget egestas. Libero eget enim mauris eu commodo malesuada vivamus eget elementum. Integer suscipit lacus, consectetur vel feugiat dictum potenti nibh. Neque viverra ut turpis ridiculus sed hac tristique aliquam. Nisi, leo integer lectus nulla est. Placerat quisque cursus varius dignissim volutpat, sociis. Felis est id amet lorem iaculis arcu blandit dolor. Eleifend et, diam sed auctor. Enim integer diam nisl ipsum semper feugiat quis lorem augue. Scelerisque non mauris mauris dapibus id vitae. Etiam sed non ornare gravida. Luctus ut proin posuere vitae orci. Orci neque a amet, eu nibh tincidunt pulvinar blandit.</p>
+            </div>
+        </div>
+    </section>
+
+        <footer class="footer">
+
+                <div class="footer-header">
+
+                    <div class="container footer-container footer__header">
+                    <img src="assets/img/logo-footer.png" alt="" class="footer-header__logo logo">
+                    <p class="footer-header__descr">Сеть многопрофильных медицинских центров</p>
+                    <ul class="footer-header__social social">
+                        <li class="social__item"><a href="#" class="social__link">
+                            <img src="assets/img/instagram.png" alt="">
+                        </a></li>
+                        <li class="social__item"><a href="#" class="social__link">
+                            <img src="assets/img/vk.png" alt="">
+                        </a></li>
+                        <li class="social__item"><a href="#" class="social__link">
+                            <img src="assets/img/ok.png" alt="">
+                        </a></li>
+
+                    </ul>
+                    <div class="bottom-header__callback header-callback">
+                        <input type="tel" name="phone" placeholder="Введите телефон" class="header-callback__input">
+                        <input type="submit" value="Записаться" class="header-callback__submit">
+                    </div>
+                </div></div>
+
+                <div class="footer-bottom">
+                    <div class="container footer-container">
+                    <div class="footer-bottom__left footer-menu-left">
+                        <ul class="footer-menu-left__item">
+                            <li class="bold">О нас</li>
+                            <li>Новости и статьи</li>
+                            <li>Фото клиники</li>
+                            <li>Вакансии</li>
+                        </ul>
+                        <ul class="footer-menu-left__item">
+                            <li class="bold">Услуги и цены</li>
+                            <li class="bold">Анализы</li>
+                            <li class="bold">Отделения</li>
+                        </ul>
+                        <ul class="footer-menu-left__item">
+                            <li class="bold">Специалисты</li>
+                            <li class="bold">Акции</li>
+                            <li class="bold">Контакты</li>
+                        </ul>
+                        <ul class="footer-menu-left__item">
+                            <li class="bold">Ждем вас:</li>
+                            <li><svg width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 12.8571C15.632 12.8571 15.3333 12.5691 15.3333 12.2143V5.78571C15.3333 5.43086 15.632 5.14286 16 5.14286C16.368 5.14286 16.6667 5.43086 16.6667 5.78571V12.2143C16.6667 12.5691 16.368 12.8571 16 12.8571Z" fill="white"/>
+                                <path d="M20.6667 12.8571C20.2987 12.8571 20 12.5691 20 12.2143V5.78571C20 5.43086 20.2987 5.14286 20.6667 5.14286H22.6667C24.1373 5.14286 25.3333 6.29614 25.3333 7.71429C25.3333 9.13243 24.1373 10.2857 22.6667 10.2857H21.3333V12.2143C21.3333 12.5691 21.0347 12.8571 20.6667 12.8571ZM21.3333 9H22.6667C23.4013 9 24 8.42271 24 7.71429C24 7.00586 23.4013 6.42857 22.6667 6.42857H21.3333V9Z" fill="white"/>
+                                <path d="M9.33333 12.8571C9.03867 12.8571 8.77867 12.6707 8.69467 12.3994L6.69467 5.97086C6.58933 5.63014 6.78933 5.27271 7.14133 5.16986C7.49333 5.06829 7.86533 5.26114 7.972 5.60057L9.33333 9.97714L10.6947 5.60186C10.8 5.26114 11.1693 5.06829 11.5253 5.16986C11.8787 5.27271 12.0787 5.63014 11.972 5.97086L9.972 12.3994C9.888 12.6707 9.628 12.8571 9.33333 12.8571Z" fill="white"/>
+                                <path d="M28.6667 18H3.33333C1.496 18 0 16.5574 0 14.7857V3.21429C0 1.44257 1.496 0 3.33333 0H28.6667C30.504 0 32 1.44257 32 3.21429V14.7857C32 16.5574 30.504 18 28.6667 18ZM3.33333 1.28571C2.23067 1.28571 1.33333 2.151 1.33333 3.21429V14.7857C1.33333 15.849 2.23067 16.7143 3.33333 16.7143H28.6667C29.7693 16.7143 30.6667 15.849 30.6667 14.7857V3.21429C30.6667 2.151 29.7693 1.28571 28.6667 1.28571H3.33333Z" fill="white"/>
+                            </svg>
+                                Геодезическая 2/1</li>
+                            <li>3 пер. Крашенинникова 12</li>
+                            <li>Красный проспект 163</li>
+                            <li>Покрышкина 1</li>
+                        </ul>
+                    </div>
+                    <ul class="footer-bottom__center footer-menu-center">
+                        <li class="footer-menu-center__item bold">Информация
+                        </li>
+                        <li class="footer-menu-center__item">Договор оферты</li>
+                        <li class="footer-menu-center__item">Договор оферты Адрем</li>
+                        <li class="footer-menu-center__item">Договор оферты Врачебная практика</li>
+                        <li class="footer-menu-center__item">Контакты</li>
+                        <li class="footer-menu-center__item">Лицензии</li>
+                        <li class="footer-menu-center__item">Наши фото</li>
+                        <li class="footer-menu-center__item">Отделение повышенного комфорта</li>
+                        <li class="footer-menu-center__item">Правила предоставления платных мед.услуг Адрем</li>
+                        <li class="footer-menu-center__item">Правила предоставления платных мед.услуг ВП</li>
+                    </ul>
+
+
+                        <ul class="footer-bottom__right footer-menu-right">
+                            <li class="footer-menu-right__item bold">8 (383) 201-83-15
+                            </li>
+                            <li class="footer-menu-right__item">Онлайн-запись</li>
+                            <li class="footer-menu-right__item">Личный кабинет</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/imask"></script>
+
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+:root {
+    --font-light:'main-font-ultra-light', sans-serif;
+    --font-light-italic: 'main-font-ultra-light-italic', sans-serif;
+    --font-thin: 'main-font-thin', sans-serif;
+    --font-roman:'main-font-roman', sans-serif;
+    --font-black: 'main-font-black', sans-serif;
+    --font-medium: 'main-font-medium', sans-serif;
+
+    --accent-color-red: #FE6963;
+    --accent-color-blue: #5591D0;
+    --accent-color-green: #98D5B2;
+    --accent-color-cyan: #00CCFF;
+}
+
+
